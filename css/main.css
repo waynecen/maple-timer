@@ -122,20 +122,6 @@ button.phaseThree {
 	color: #fff;
 }
 
-.timer__container {
-	display: flex;
-	flex-direction: row;
-	width: 368px;
-	border-radius: 8px;
-	background: linear-gradient(
-		180deg,
-		#414141 0%,
-		rgba(0, 0, 0, 0.78) 24.48%,
-		rgba(97, 97, 97, 0.17) 100%
-	);
-	background-color: rgba(0, 0, 0, 0.88);
-}
-
 .timer__container-borderWrap {
 	border-radius: 8px;
 	margin-top: 8px;
@@ -147,6 +133,37 @@ button.phaseThree {
 		180deg,
 		#c7c7c7 0%,
 		rgba(199, 199, 199, 0) 100%
+	);
+}
+
+.timer__container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 368px;
+	border-radius: 8px;
+	background: linear-gradient(
+		180deg,
+		#414141 0%,
+		rgba(0, 0, 0, 0.78) 24.48%,
+		rgba(97, 97, 97, 0.17) 100%
+	);
+	background-color: rgba(0, 0, 0, 0.88);
+	overflow: hidden;
+}
+
+.timer__angledShape {
+	position: absolute;
+	width: 300px;
+	height: 350px;
+	top: -100px;
+	left: -180px;
+
+	transform: rotate(30deg);
+	background: linear-gradient(
+		180deg,
+		rgba(119, 119, 119, 0.25) 0%,
+		rgba(196, 196, 196, 0) 111.94%
 	);
 }
 
