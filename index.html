@@ -31,14 +31,17 @@
 							<div class="timer__angledShape"></div>
 							<div class="timer__section">
 								<h3>Next FMA in</h3>
-								<div class="timer__nextFMA">2m40s</div>
-								<div class="timer__FMAtime">(27:19)</div>
+								<div id="timer__nextFMA">2m30s</div>
+								<div id="timer__FMAtime">(27:19)</div>
 							</div>
 							<div class="timer__section">
 								<h3>Run Timer</h3>
-								<div class="timer__runTimer">29m59s</div>
+								<div id="timer__runTimer">29m42s</div>
 								<div class="timer__section-wrapper">
-									<button class="reset">
+									<button
+										class="reset"
+										onclick="resetTimer()"
+									>
 										<img
 											src="img/resetButton.svg"
 											alt="Reset Button"
@@ -50,7 +53,13 @@
 					</div>
 
 					<div class="timer__CTAButtons">
-						<button class="startRun">Start Run</button>
+						<button
+							id="startRun"
+							onclick="startTimer()"
+							data-state="Start"
+						>
+							Start Run
+						</button>
 						<button class="nextFMA">Next FMA</button>
 					</div>
 				</div>
